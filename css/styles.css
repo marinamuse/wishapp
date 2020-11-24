@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  height: 100vh;
+}
+.main-content {
+  border: solid 1px rgb(205, 205, 205);
+  border-radius: 8px;
+  height: 400px;
+  top: 20vh;
+  -webkit-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
+  box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
+}
+.fa-star {
+  color: #fecd1a;
+}
+h4 {
+  color: #120078;
+}
+.signin-btn {
+  background-color: #fecd1a;
+  color: #120078;
+}
+.signin-btn:hover {
+  background-color: #ffd748;
+  color: #2c1e79;
+}
+.signup-btn {
+  background-color: #120078;
+  color: #fecd1a;
+}
+.signup-btn:hover {
+  background-color: #2c1e79;
+  color: #ffd748;
+}
+.forgot-password {
+  color: #120078;
+}
+.forgot-password:hover {
+  text-decoration: none;
+  color: #2c1e79;
+}
