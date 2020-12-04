@@ -65,21 +65,35 @@ h4 {
   box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
   padding: 16px;
 }
-.wish-img {
+.wishes-img {
   width: 200px;
   margin: 16px;
 }
 .media {
   border-radius: 8px;
   padding: 8px;
+  transition: 0.2s ease-in;
 }
 .media:hover {
   background-color: #f3e7ed;
   cursor: pointer;
+  transform: scale(1.02);
 }
 .delete-icon {
   color: rgb(194, 194, 194);
 }
 .delete-icon:hover {
   color: rgb(252, 141, 159);
+}
+.wish-img {
+  width: 100px;
+}
+.wish-card {
+  width: 80vw;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease-in;
+}
+.wish-card:hover {
+  transform: scale(1.02);
 }
