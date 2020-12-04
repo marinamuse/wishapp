@@ -1,15 +1,25 @@
+/* .main {
+  width: 90vw;
+  margin: 20vw auto;
+  
+  padding: 20px;
+} */
 .main {
-  display: flex;
   height: 100vh;
+  padding: 20px;
 }
 .main-content {
-  border: solid 1px rgb(205, 205, 205);
-  border-radius: 8px;
-  height: 400px;
+  position: relative;
   top: 20vh;
+  max-width: 40vw;
   -webkit-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
   -moz-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
   box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
+  border: solid 1px rgb(205, 205, 205);
+  border-radius: 8px;
+}
+form {
+  padding: 20px;
 }
 .fa-star {
   color: #fecd1a;
@@ -39,4 +49,37 @@ h4 {
 .forgot-password:hover {
   text-decoration: none;
   color: #2c1e79;
+}
+.navbar {
+  background-color: #cc0e74;
+}
+.nav-link {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.wish-list {
+  -webkit-box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
+  -moz-box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
+  box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
+  padding: 16px;
+}
+.wish-img {
+  width: 200px;
+  margin: 16px;
+}
+.media {
+  border-radius: 8px;
+  padding: 8px;
+}
+.media:hover {
+  background-color: #f3e7ed;
+  cursor: pointer;
+}
+.delete-icon {
+  color: rgb(194, 194, 194);
+}
+.delete-icon:hover {
+  color: rgb(252, 141, 159);
 }
