@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="container navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="#">WishApp</a>
+        <a class="navbar-brand" href="mywishes.html">WishApp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,33 +36,36 @@
       <div class="container wish-list">
           <h1 class="mx-auto" style="width: 200px">My Wishes</h1>
           <ul class="list-unstyled">
-            <a role="button" id="monitorButton"><li class="media">
+            <li class="media monitor">
               <img class="wishes-img" src="https://images-na.ssl-images-amazon.com/images/I/91pvqUcAKmL._AC_SL1500_.jpg" class="mr-3" alt="...">
               <div class="align-self-center media-body">
                 <h5 class="mt-0 mb-1">Big curved monitor</h5>
-                SAMSUNG LC34J791WTNXZA 34-Inch CJ791 Ultrawide Curved Gaming Monitor, White.
+                <p id="monitorButton">SAMSUNG LC34J791WTNXZA 34-Inch CJ791 Ultrawide Curved Gaming Monitor, White.</p>
                 <h5 class="mt-0 mb-1">$430</h5>
-                <i class="fa fa-trash delete-icon"></i>
+                <button onclick="location.href='https://www.amazon.com/stores/page/84701A13-D4C5-4707-9252-AD60F119EC4B?store_ref=SB_A0920834SN2CIUILYZ0H&pd_rd_w=ewYbM&pf_rd_p=65c0ea61-8326-4b81-8f5a-daf1cc53fab6&pd_rd_wg=xtnip&pf_rd_r=HHZRH0SRNMKYNX0CERGH&pd_rd_r=8e65744c-d85c-4f13-a6ee-f8c0694b8ee8&aaxitk=9A9.Ke.CeDdEox.Zr4Kefw&hsa_cr_id=2700509410201&lp_asins=B08CLSPKJG&lp_mat_key=samsung%20lc34j791wtnxza&lp_query=SAMSUNG%20LC34J791WTNXZA%2034-Inch%20CJ791%20Ultrawide%20Curved%20Gaming%20Monitor,%20White.&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd'" class="btn btn-sm make-true-btn">MAKE TRUE</button>
+                <i class="fa fa-trash delete-icon fa-2x float-right mr-4" onclick="deleteWish()"></i>
               </div>
-            </li></a>
-            <a role="button" id="keyboardButton"><li class="media my-4">
+            </li>
+            <li id="keyboardButton" class="media keyboard my-4">
               <img class="wishes-img" src="https://images-na.ssl-images-amazon.com/images/I/81Ch14S7cdL._AC_SL1500_.jpg" class="mr-3" alt="...">
               <div class="align-self-center media-body">
                 <h5 class="mt-0 mb-1">Vintage keyboard</h5>
                 CORN K520 Lipstick Mechanical Keyboard Metal Panel Round Retro Backlit 104 Keys USB Wired Blue Switch for Desktop, Laptop.
                 <h5 class="mt-0 mb-1">$48</h5>
-                <i class="fa fa-trash delete-icon"></i>
+                <button onclick="location.href='https://www.amazon.com/gp/product/B08B3Q2NC5?pf_rd_r=QCHG6MPAHGP8BFD5BJP6&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f'" class="btn btn-sm make-true-btn">MAKE TRUE</button>
+                <i class="fa fa-trash delete-icon fa-2x float-right mr-4"></i>
               </div>
-            </li></a>
-            <a role="button" id="controllerButton"><li class="media">
+            </li>
+            <li id="controllerButton" class="media controller">
               <img class="wishes-img" src="https://images-na.ssl-images-amazon.com/images/I/81RctDCP38L._AC_SL1500_.jpg" class="mr-3" alt="...">
               <div class="align-self-center media-body">
                 <h5 class="mt-0 mb-1">Midi controller</h5>
                 Akai Professional USB MIDI Controller for FL Studio with 64 RGB Clip/Drum Pad Matrix (Fire).
                 <h5 class="mt-0 mb-1">$120</h5>
-                <i class="fa fa-trash delete-icon"></i>
+                <button onclick="location.href='https://www.amazon.com/Akai-Professional-Controller-Studio-Fire/dp/B08284R4JZ/ref=sr_1_9?dchild=1&keywords=midi+controller&qid=1607136379&sr=8-9'" class="btn btn-sm make-true-btn">MAKE TRUE</button>
+                <i class="fa fa-trash delete-icon fa-2x float-right mr-4"></i>
               </div>
-            </li></a>
+            </li>
           </ul>
       </div>
 
@@ -75,28 +78,17 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form action="">
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label"> Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
+                        <img class="modal-img" src="https://images-na.ssl-images-amazon.com/images/I/91pvqUcAKmL._AC_SL1500_.jpg" alt="">
+                        <h5 class="mt-0 mb-1">Big curved monitor</h5>
+                        <h5 class="mt-0 mb-1">$430</h5>
+                        SAMSUNG LC34J791WTNXZA 34-Inch CJ791 Ultrawide Curved Gaming Monitor, White.
+                        34-INCH 21:9 ULTRAWIDE CURVED MONITOR with QLED technology for vibrant color and fine detail
+                        MONITOR FOR MACBOOK PRO supports Thunderbolt 3 which offers 40 Gbps processing speed—8x faster than USB 3.0 —and up to 85W laptop charging thru single cable
+                        CURVED GAMING MONITOR with 100Hz refresh rate, AMD FreeSync and multiple game modes
+                        ADVANCED QUANTUM DOT COLOR and VA panel supports up to 125% sRGB color space and darker blacks
+                        EASIER ON EYES due to ergonomic curved screen and low blue light emissions
+                        100 hertz<br/>
+                        <a href="https://www.amazon.com/stores/page/84701A13-D4C5-4707-9252-AD60F119EC4B?store_ref=SB_A0920834SN2CIUILYZ0H&pd_rd_w=ewYbM&pf_rd_p=65c0ea61-8326-4b81-8f5a-daf1cc53fab6&pd_rd_wg=xtnip&pf_rd_r=HHZRH0SRNMKYNX0CERGH&pd_rd_r=8e65744c-d85c-4f13-a6ee-f8c0694b8ee8&aaxitk=9A9.Ke.CeDdEox.Zr4Kefw&hsa_cr_id=2700509410201&lp_asins=B08CLSPKJG&lp_mat_key=samsung%20lc34j791wtnxza&lp_query=SAMSUNG%20LC34J791WTNXZA%2034-Inch%20CJ791%20Ultrawide%20Curved%20Gaming%20Monitor,%20White.&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd" target="_blank"><button class="btn btn-lg mt-2 make-true-btn">MAKE TRUE</button></a>
                     </div>
                 </div>
             </div>
@@ -112,28 +104,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form action="">
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label"> Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
+                        <img class="modal-img" src="https://images-na.ssl-images-amazon.com/images/I/81Ch14S7cdL._AC_SL1500_.jpg" alt="">
+                        <h5 class="mt-0 mb-1">Vintage Keyboard</h5>
+                        <h5 class="mt-0 mb-1">$48</h5>
+                        CORN K520 Lipstick Mechanical Keyboard Metal Panel Round Retro Backlit 104 Keys USB Wired Blue Switch for Desktop, Laptop.
+                        Adopted professional equivalent switches, which offers a quicker and springier response, crisp click sound for spring typing enjoyment, precise tactile feedback for ultimate gaming performance. Comes with keycap puller for easy keycaps cleaning.<br/>
+                        <a href="https://www.amazon.com/gp/product/B08B3Q2NC5?pf_rd_r=QCHG6MPAHGP8BFD5BJP6&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f" target="_blank"><button class="btn make-true-btn btn-lg mt-2">MAKE TRUE</button></a>
                     </div>
                 </div>
             </div>
@@ -149,28 +125,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form action="">
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label"> Remember me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
+                        <img class="modal-img" src="https://images-na.ssl-images-amazon.com/images/I/81RctDCP38L._AC_SL1500_.jpg" alt="">
+                        <h5 class="mt-0 mb-1">Midi Controller</h5>
+                        <h5 class="mt-0 mb-1">$120</h5>
+                        Akai Professional USB MIDI Controller for FL Studio with 64 RGB Clip/Drum Pad Matrix (Fire).
+                        FL studio music production essential - dedicated USB MIDI hardware controller for the FL studio DAW platform with seamless plug-and-play connectivity
+                        Workflow revolution - 64 velocity-sensitive RGB pads for creation of patterns in the step sequencer and recording notes/ Synth parts on a pad-based MIDI keyboard controller in performance Mode
+                        Beat production simplified – transform fire into a beat maker essential with a MPC style 16-pad layout in drum Mode<br/>
+                        <a href="https://www.amazon.com/Akai-Professional-Controller-Studio-Fire/dp/B08284R4JZ/ref=sr_1_9?dchild=1&keywords=midi+controller&qid=1607136379&sr=8-9" target="_blank"><button class="btn make-true-btn btn-lg mt-2">MAKE TRUE</button></a>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
 .main-content {
   position: relative;
   top: 20vh;
-  max-width: 40vw;
+  max-width: 30vw;
   -webkit-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
   -moz-box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
   box-shadow: 0px 0px 34px 11px rgba(222, 222, 222, 1);
@@ -59,7 +59,8 @@ h4 {
 .navbar-brand {
   color: white;
 }
-.wish-list {
+.wish-list,
+.wish-form {
   -webkit-box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
   -moz-box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
   box-shadow: 0px 0px 61px 21px rgba(240, 240, 240, 1);
@@ -73,17 +74,13 @@ h4 {
   border-radius: 8px;
   padding: 8px;
   transition: 0.2s ease-in;
+  border: solid 1px rgb(223, 223, 223);
+  display: flex;
 }
 .media:hover {
-  background-color: #f3e7ed;
+  background-color: #f2f2f2;
   cursor: pointer;
   transform: scale(1.02);
-}
-.delete-icon {
-  color: rgb(194, 194, 194);
-}
-.delete-icon:hover {
-  color: rgb(252, 141, 159);
 }
 .wish-img {
   width: 100px;
@@ -96,4 +93,24 @@ h4 {
 }
 .wish-card:hover {
   transform: scale(1.02);
+}
+.modal-img {
+  width: 100%;
+}
+.make-true-btn {
+  background-color: #cc0e74;
+  color: white;
+}
+.delete-icon {
+  color: rgb(194, 194, 194);
+}
+.delete-icon:hover {
+  color: rgb(252, 141, 159);
+}
+.wish-form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+textarea {
+  resize: none;
 }
